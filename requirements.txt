@@ -1,0 +1,10 @@
+#Universidad Yachay Tech
+#Diego Hernán Suntaxi Domínguez
+#Curso de Web Programming
+#Prof. Rigoberto Fonseca  
+
+Flask
+Flask-Session
+requests
+sqlalchemy
+flask_sqlalchemy

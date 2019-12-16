@@ -1,0 +1,71 @@
+$tittle-font: 'Dancing Script', cursive;
+$menu-font: 'Montserrat', sans-serif;
+$font-family-1: 'Raleway', sans-serif;
+$font-family-2: 'Poppins', sans-serif;
+$color-celeste: #1E96C3;
+
+h1  {
+    font-family: $tittle-font;
+    font-size: 100pt;
+    text-align: center;
+}
+
+
+.titles-info {
+    font-family: $font-family-2;
+    color: $color-celeste;
+
+}
+
+#title-enf.titles-info {
+    background-color: $color-celeste;
+    color: #ffffff;
+}
+
+.description-items {
+    padding: 2%;
+}
+
+#img-pato {
+    height: 200px; 
+    width: 600px;
+}
+h2  {
+    font-family: $font-family-2;
+    font-size: 20pt;
+    text-align: center;
+    padding: 4%;
+}
+
+.content-list {
+    font-family: $font-family-2;
+    font-size: 12pt;
+}
+
+.main-button {
+    height: 70px; 
+    width: 250px;
+    background-color:$color-celeste;
+    font-family: $font-family-2;
+
+}
+
+#searchbt.main-button {
+    height: 50px; 
+    width: 120px;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.menus {
+    font-family: $menu-font;
+}
+
+#ritmolb {
+    font-size: 20pt;
+}
+
+.cajones {
+    padding-left: 35%;
+    padding-right: 35%;
+}

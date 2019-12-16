@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cuore Wave Performance
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <div class="row align-items-center">
+        <div class="col-6 text-center">
+            <h2 id = "title-enf" class="border border-primary rounded-pill titles-info">{{enfermedad.pato_nombre}}</h2>
+        </div>
+        <div class="col text-center ">
+            <ul class="list-group content-list ">
+                <li class="list-group-item">Rate: {{enfermedad.rate}}</li>
+                <li class="list-group-item ">P Wave: {{enfermedad.p_wave}}</li>
+            </ul>
+        </div>
+        <div class="col text-center content-list">
+            <ul class="list-group">
+                <li class="list-group-item">PR Interval: {{enfermedad.pr_interval}}</li>
+                <li class="list-group-item">QRS Complex: {{enfermedad.qrs_complex}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <ul class="list-group content-list">
+                <li class="list-group-item">Rythm: {{enfermedad.ritmo}}</li>
+            </ul>
+        </div>
+        <div class="col text-center">
+            <ul class="list-group content-list">
+                <li class="list-group-item">BPM: {{bpm}}</li>
+            </ul>
+        </div>
+        <div class="col text-center">
+            <ul class="list-group content-list">
+                <li class="list-group-item">T Wave: {{enfermedad.t_wave}}</li>
+            </ul>
+        </div>
+        <div class="col text-center">
+            <ul class="list-group content-list">
+                <li class="list-group-item">QT Interval: {{enfermedad.qt_interval}}</li>
+                <li class="list-group-item">Other: {{enfermedad.other}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video width="320" height="240" autoplay controls loop>
+                    <source src="/static/videos_enf/{{enfermedad.id}}.m4v" type="video/mp4">    
+                </video>
+            </div>
+        </div>
+        <div class="col text-left">
+            <div class="card description-items" style="width: 40rem;">
+                <div class="card-body">
+                  <h5 class="card-title titles-info">Description</h5>
+                  <p class="card-text .content-list">{{enfermedad.descripcion}}</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <img id="img-pato" src="/static/Imagenes/{{enfermedad.id}}.png" class="rounded float-left" alt="{{enfermedad.id}}">
+        </div>
+        <div class="col text-right">
+            <div class="card description-items" style="width: 30rem;">
+                <div class="card-body">
+                  <h5 class="card-title titles-info">Recommendations</h5>
+                  <p class="card-text .content-list">{{enfermedad.recomendaciones}}</p>
+                </div>
+              </div>
+        </div>
+            
+    </div>
+<br>
+    <div class="col text-center">
+        <form action="/main" method="GET">
+            <button type="submit" class="main-button btn btn-info btn-lg">Patology Detection</button>
+        </form>
+    </div>
+    
+
+</div>
+    
+
+{% endblock %}

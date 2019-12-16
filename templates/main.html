@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Cuore Wave App
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <img src="/static/CUORE WAVE.png" class="rounded mx-auto d-block" alt="Responsive image">
+    <br>
+    <br>
+    <form action="/info" method="GET">
+        <div class="row align-items-center">
+            <div class="col text-center cajones">
+                <div class="form-group">
+                    <label id="ritmolb" class= "menus" for="exampleFormControlSelect1">Ritmo</label>
+                    <select name = "ritmo" class="menus form-control" id="exampleFormControlSelect1">
+                        {% for item in lista %}
+                        <option value ="{{item}}" class="menus">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        
+            
+        <div class="col text-center cajones">
+            <br>
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                    <span class="menus input-group-text" id="inputGroup-sizing-lg">BPM</span>
+                </div>
+                <input name="bpm" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <br>
+                <br>
+                <button id = "searchbt" type="submit" class="main-button menus btn btn-info">Search</button>
+            </div>
+            
+        </div>
+    </form>
+</div>
+    
+    
+    
+
+</div>
+    
+
+{% endblock %}

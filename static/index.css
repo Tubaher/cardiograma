@@ -1,0 +1,65 @@
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100pt;
+  text-align: center;
+}
+
+.titles-info {
+  font-family: "Poppins", sans-serif;
+  color: #1E96C3;
+}
+
+#title-enf.titles-info {
+  background-color: #1E96C3;
+  color: #ffffff;
+}
+
+.description-items {
+  padding: 2%;
+}
+
+#img-pato {
+  height: 200px;
+  width: 600px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20pt;
+  text-align: center;
+  padding: 4%;
+}
+
+.content-list {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+}
+
+.main-button {
+  height: 70px;
+  width: 250px;
+  background-color: #1E96C3;
+  font-family: "Poppins", sans-serif;
+}
+
+#searchbt.main-button {
+  height: 50px;
+  width: 120px;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.menus {
+  font-family: "Montserrat", sans-serif;
+}
+
+#ritmolb {
+  font-size: 20pt;
+}
+
+.cajones {
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+/*# sourceMappingURL=index.css.map */
